@@ -1,0 +1,50 @@
+* {
+    /*todo que existe en la pagina */
+}
+
+body {
+    background-color: blueviolet;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+}
+
+h2 {
+    padding: 2cm;
+    border: 4px solid aquamarine;
+}
+
+.liRojo {
+    color: #ff0000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#ultima { /*el id tiene mas peso que la classe, pero en otro case, el ultimo es lo que es aplicado*/
+    color: aqua;
+    font-style: italic;
+}
+
+#tamanoGrande {
+    font-size: 30px; 
+}
+
+.greek {
+    list-style-type: lower-greek;
+}
+
+#spidey {
+    width: 49%;
+    /*width: 49vw;*/
+    position:relative;
+    left: 30px;
+}
+
+#menu {
+    position: absolute;
+    left: 150px;
+}
+
+/* diferencia entre los elementos que son "bloc" et los que son in "line" (ej: section, div, span...) 
+para estar al lado de un otro elementos, los dos deben ser inlines */
