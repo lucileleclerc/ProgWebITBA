@@ -1,17 +1,213 @@
 * {
-    /*todo que existe en la pagina */
+    font-family: "Numans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
 }
 
-body {
-    background-color: blueviolet;
+li {
+    text-align: left;
+    list-style-type: circle;
+    font-size: 20px;
 }
 
-h1 {
-    font-size: 50px;
+.navli {
+    font-size: 15px;
+}
+
+#toptitle, #bigtitle, #fav, #toread, #cattitle, #quotitle, #sugtitle {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#bigtitle {
+    font-size: 60px;
+}
+
+#desc {
+    font-size: 30px;
+}
+
+.divprincipales {
+    height: 100vh;
+    width: 100vw;
+}
+
+#pres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#categories {
+    text-align: center;
+}
+
+#containerflexboxcat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+#containerflexboxquotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cat {
+    text-align: left;
+    height: 65vh;
+    width: 20vw;
+    border-radius: 30px;
+    padding-left: 15px;
+}
+
+#cat1 {
+    border: 5px solid rgb(0, 208, 255);
+    background-color: #82fade;
+}
+
+#cat2 {
+    border: 5px solid chartreuse;
+    background-color: #b7fe88;
+}
+
+#cat3 {
+    border: 5px solid rgb(255, 248, 45);
+    background-color: #fffd8e;
+}
+
+#cat4 {
+    border: 5px solid rgb(255, 89, 0);
+    background-color: #ffb16c;
+}
+
+#quotes, #container1, #container2 {
+    text-align: center;
+}
+
+.item {
+    padding-left: 25%;
+}
+
+.titles {
+    padding-top: 120px;
+    text-decoration-line: underline;
+}
+
+#container1 .carousel-inner .item:nth-child(1){
+    background-color: #7e0201;
+}
+#container1 .carousel-inner .item:nth-child(2){
+    background-color: #e099a9;
+}
+#container1 .carousel-inner .item:nth-child(3){
+    background-color: #54808d;
+}
+#container1 .carousel-inner .item:nth-child(4){
+    background-color: #6c3356;
+}
+#container1 .carousel-inner .item:nth-child(5){
+    background-color: #fbd8a0;
+}
+#container1 .carousel-inner .item:nth-child(6){
+    background-color: #c2b276;
+}
+#container1 .carousel-inner .item:nth-child(7){
+    background-color: #e69536;
+}
+
+#container2 .carousel-inner .item:nth-child(1){
+    background-color: #29313e;
+}
+#container2 .carousel-inner .item:nth-child(2){
+    background-color: #88d8fb;
+}
+#container2 .carousel-inner .item:nth-child(3){
+    background-color: #f6aa32;
+}
+#container2 .carousel-inner .item:nth-child(4){
+    background-color: #403814;
+}
+#container2 .carousel-inner .item:nth-child(5){
+    background-color: #b95949;
+}
+
+.cover {
+    height: 75vh;
+}
+
+#back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 40px;
+    width: 40px;
+    padding-left: 5px;
+    border: 5px outset rgb(0, 0, 0);
+    background-color: #323232;
+}
+
+#arrow {
     color: white;
 }
 
-h2 {
+.quo {
+    border: 3px solid rgb(132, 131, 131);
+    background-color: #c8c8c8;
+    font-size: 20px;
+    width: 60%;
+    padding: 10px;
+}
+
+@keyframes quoteactive {
+    0%   {background-color: rgb(227, 162, 255); border: 3px solid #6c3356;}
+    50%  {background-color: #c8c8c8; border: 3px solid rgb(132, 131, 131);}
+}
+
+#quo1 {
+    animation-name: quoteactive;
+    animation-duration: 8s;
+    animation-iteration-count: infinite
+}
+
+#quo2 {
+    animation-name: quoteactive;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite
+}
+
+#quo3 {
+    animation-name: quoteactive;
+    animation-duration: 8s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite
+}
+
+#quo4 {
+    animation-name: quoteactive;
+    animation-duration: 8s;
+    animation-delay: 6s;
+    animation-iteration-count: infinite
+}
+
+
+/*EXEMPLES DU COUR
+
+h6 {
+    font-size: 50px;
+    color: white;
     padding: 2cm;
     border: 4px solid aquamarine;
 }
@@ -21,7 +217,7 @@ h2 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#ultima { /*el id tiene mas peso que la classe, pero en otro case, el ultimo es lo que es aplicado*/
+#ultima { /*el id tiene mas peso que la classe, pero en otro case, el ultimo es lo que es aplicado
     color: aqua;
     font-style: italic;
 }
@@ -36,7 +232,7 @@ h2 {
 
 #spidey {
     width: 49%;
-    /*width: 49vw;*/
+    /*width: 49vw;
     position:relative;
     left: 30px;
 }
@@ -48,3 +244,26 @@ h2 {
 
 /* diferencia entre los elementos que son "bloc" et los que son in "line" (ej: section, div, span...) 
 para estar al lado de un otro elementos, los dos deben ser inlines */
+
+
+/* CLASSE 5 */
+/* The animation code 
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+  
+  /* The element to apply the animation to 
+  #anim {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s; /*-2s will work, as if it had already been playing for 2s
+    animation-iteration-count: 3; /*infinite works
+    animation-direction: reverse; /* o normal, alternate, alternate-reverse
+    
+}*/
