@@ -33,8 +33,9 @@ li {
 }
 
 .divprincipales {
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    width: auto;
 }
 
 #pres {
@@ -66,8 +67,9 @@ li {
 
 .cat {
     text-align: left;
-    height: 65vh;
-    width: 20vw;
+    min-height: 88vh;
+    height: auto;
+    width: auto;
     border-radius: 30px;
     padding-left: 15px;
 }
