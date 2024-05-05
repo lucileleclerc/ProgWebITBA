@@ -410,13 +410,24 @@
       <br>
       <p style="text-align: center;">Feel free to share your favourite books with me! I'm always looking for new readings!</p>
       <div id="sugg">
-         <form>
-            <input type="text" id="suggInput" placeholder="Write here your suggestion">
-            <button id="suggSubmit">Send</button>
-         </form> 
+         <input type="text" class="form-control" id="suggTitleInput" placeholder="Title">
+         <input type="text" class="form-control" id="suggAuthorInput" placeholder="Author">
+         <input type="text" class="form-control" id="suggDescInput" placeholder="One word of description?">
+         <button type="submit" id="suggSubmit">Send</button>
       </div>
       <div id="voirSugg">
-         <ul id="listeSugg"></ul>
+         <div id="listeTitleSugg">
+            <h4 style="font-style: italic; font-weight: bold;">Title</h4>
+            <p>La Pierre et le Sabre, la parfaite lumière</p>
+         </div>
+         <div id="listeAuthorSugg">
+            <h4 style="font-style: italic; font-weight: bold;">Author</h4>
+            <p>Eiji Yoshikawa</p>
+         </div>
+         <div id="listeDescSugg">
+            <h4 style="font-style: italic; font-weight: bold;">Description</h4>
+            <p>Philosophic</p>
+         </div>
       </div>
    </div>
 
