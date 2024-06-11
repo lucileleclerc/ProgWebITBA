@@ -9,7 +9,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-#toptitle, #bigtitle, #fav, #toread, #cattitle, #quotitle, #sugtitle {
+#toptitle, #bigtitle, #fav, #toread, #cattitle, #quotitle, #sugtitle, #propNGrade {
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -56,7 +56,7 @@ body {
 
 .divprincipales {
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 100%;
 }
 
 #container1, #container2 {
@@ -70,7 +70,7 @@ body {
 
 .carousel-inner {
     min-height: 100%;
-    min-width: 100vw;
+    min-width: 100%;
     height: 100%;
 }
 
@@ -297,4 +297,39 @@ body {
 #listeAuthorSugg {
     border-right: 1px dotted gray;
     border-left: 1px dotted gray;
+}
+
+#sendPersList1, #sendPersList2 {
+    border: 5px outset rgb(0, 0, 0);
+    background-color: #323232;
+    color: white;
+}
+
+#personalList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5vh;
+}
+
+#voirProp {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    column-gap: 2%;
+}
+
+#voirProp * {
+    flex: 1 1 0px;
+    justify-content: center;
+    text-align: center;
+}
+
+#prop p, #grade p {
+    text-align: center;
+    width: 100%;
+}
+
+#prop {
+    border-right: 1px dotted gray;
 }
